@@ -1,0 +1,25 @@
+{
+  "name": "gitter-bridge",
+  "version": "1.0.0",
+  "description": "Gitter ⇄ Status Bridge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/status-im/gitter-bridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/status-im/gitter-bridge/issues"
+  },
+  "homepage": "https://github.com/status-im/gitter-bridge#readme",
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.4.3",
+    "murmur-client": "^0.4.1",
+    "node-gitter": "^2.1.0",
+    "status-js-api": "^1.2.9"
+  }
+}
