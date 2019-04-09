@@ -1,7 +1,12 @@
 module.exports = {
-  'token': process.env.GITTER_TOKEN,
-  "gitterRoom": "status-im/gitter-bridge",
-  "statusRoom": "#gitter-bridge",
-  "statusProvider": "ws://localhost:8546",
-  "statusPrivateKey": process.env.STATUS_PRIVKEY
+  'gitter': {
+    'token': process.env.GITTER_TOKEN,
+    "room": "embark-framework/embark-dev",
+  },
+  'status': {
+    "provider": "ws://localhost:8546",
+    "privateKey": process.env.STATUS_PRIVKEY,
+    "room": "#status-embark",
+    "replace": /^embarkbot_gitlab@gitter/
+  }
 }
