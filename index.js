@@ -34,7 +34,7 @@ const status = new StatusJS();
     if(message[0] !== "~#c4") return; // Not a message. Ignore
     if(data.sig === pk) return; // Bridge user. Ignore
 
-    let gitterMsg = `${username.replace(/\s/g, '-')}@status.im ${message[1][0]}`;
+    let gitterMsg = `**${username.replace(/\s/g, '-')}@status.im** ${message[1][0]}`;
     if(config.gitter.replace){
       gitterMsg = gitterMsg.replace(config.gitter.replace, '');
     }
@@ -47,7 +47,7 @@ const status = new StatusJS();
     if(message.operation !== 'create') return; // Not a new message. Ignore
     if(message.model.fromUser.username === user.username) return; // Bridge user. Ignore
     
-    let statusMsg = `${message.model.fromUser.username}@gitter ${message.model.text}`;
+    let statusMsg = `*${message.model.fromUser.username}@gitter* ${message.model.text}`;
     if(config.status.replace){
       statusMsg = statusMsg.replace(config.status.replace, '');
     }
