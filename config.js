@@ -7,6 +7,6 @@ module.exports = {
     "provider": "ws://localhost:8546",
     "privateKey": process.env.STATUS_PRIVKEY,
     "room": "#gitter-bridge",
-    "replace": /^embarkbot_gitlab@gitter/
+    "replace": /^\*\*embarkbot_gitlab@gitter\*\*/
   }
 }
