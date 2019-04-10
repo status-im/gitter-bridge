@@ -21,6 +21,6 @@
     "@babel/runtime-corejs2": "^7.4.3",
     "murmur-client": "^0.4.1",
     "node-gitter": "^2.1.0",
-    "status-js-api": "^1.2.9"
+    "status-js-api": "^1.2.11"
   }
 }
